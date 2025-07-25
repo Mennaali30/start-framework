@@ -1,0 +1,57 @@
+.div-img {
+  position: relative;
+}
+
+.img-hov {
+  position: relative;
+  width: 100%;
+  border-radius: 0.5rem;   /* عشان يطابق rounded-2 */
+  overflow: hidden;        /* يخلي الlayer ياخد نفس الـ radius */
+}
+
+/* الصورة نفسها */
+.img-port {
+  width: 100%;
+  display: block;
+}
+
+/* الـ overlay (+) */
+.img-hov .spann {
+  position: absolute;
+  inset: 0;                     
+  background-color: #1EBC9C;
+  color: #fff;
+  font-size: 96px;              
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;                   
+  transition: opacity .5s ease-in-out;
+  z-index: 2;
+  border-radius: inherit;
+  font-weight: 900;
+}
+
+/* عند الهوفر يظهر الoverlay */
+.img-hov:hover .spann {
+  opacity: 0.93;
+}
+
+.line-blow {
+  background-color: #2C3E50;
+  display: block;
+  width: 70px;
+  height: 4px;
+}
+
+#imgModal .portfolio-modal {
+  max-width: 600px;  
+}
+
+
+#imgModal img {
+  max-height: 80vh;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,27 @@
+.line-blow {
+  background-color: #2C3E50;
+  display: block;
+  width: 70px;
+  height: 4px;
+}
+.port-col{
+    color: #2C3E50;
+}
+form button{
+    left: 0;
+    background-color:#1ABC9C ;
+    color: #fff;
+    outline: none;
+    border: 0;
+}
+form input{
+    border: 0;
+    border-bottom: 1px solid #DFE3E7;
+    border-radius: 5px;
+    padding: 3%;
+}
+form input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #DFE3E7; 
+}
